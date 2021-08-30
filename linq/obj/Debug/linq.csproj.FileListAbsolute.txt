@@ -1,0 +1,7 @@
+D:\Docs\Training\foudation\core-api\linq\bin\Debug\linq.exe.config
+D:\Docs\Training\foudation\core-api\linq\bin\Debug\linq.exe
+D:\Docs\Training\foudation\core-api\linq\bin\Debug\linq.pdb
+D:\Docs\Training\foudation\core-api\linq\obj\Debug\linq.csprojAssemblyReference.cache
+D:\Docs\Training\foudation\core-api\linq\obj\Debug\linq.csproj.CoreCompileInputs.cache
+D:\Docs\Training\foudation\core-api\linq\obj\Debug\linq.exe
+D:\Docs\Training\foudation\core-api\linq\obj\Debug\linq.pdb
