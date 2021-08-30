@@ -17,3 +17,4 @@ D:\Docs\Training\foudation\core-api\core-api\obj\Debug\netcoreapp3.1\core-api.Ra
 D:\Docs\Training\foudation\core-api\core-api\obj\Debug\netcoreapp3.1\core-api.dll
 D:\Docs\Training\foudation\core-api\core-api\obj\Debug\netcoreapp3.1\core-api.pdb
 D:\Docs\Training\foudation\core-api\core-api\obj\Debug\netcoreapp3.1\core-api.genruntimeconfig.cache
+D:\Docs\Training\foudation\core-api\core-api\obj\Debug\netcoreapp3.1\core-api.csprojAssemblyReference.cache
