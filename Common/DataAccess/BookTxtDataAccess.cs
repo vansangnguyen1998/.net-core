@@ -16,10 +16,9 @@ namespace Common.DataAccess
         public BookTxtDataAccess()
         {
             m_books = new List<BookDTO>();
-            InputDataFileFile();
         }
         
-        private void InputDataFileFile()
+        public void InputDataFileFile()
         {
             if (File.Exists(FILE_NAME))
             {
@@ -34,6 +33,15 @@ namespace Common.DataAccess
                     }
                 }
             }
+        }
+
+        public BookDTO GetOne(int id)
+        {
+            return m_books.FirstOrDefault(x => x.Id == id);
+        }
+        public List<BookDTO> GetAll()
+        {
+            return m_books;
         }
 
         private BookDTO ParseData(string data)
@@ -64,7 +72,8 @@ namespace Common.DataAccess
             var book = m_books.FirstOrDefault(b => b.Id == bookDto.Id);
             if (book != null)
             {
-                book = bookDto;
+                m_books.Remove(book);
+                m_books.Add(bookDto);
             }
 
             return book;

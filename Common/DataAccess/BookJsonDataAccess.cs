@@ -16,19 +16,9 @@ namespace Common.DataAccess
         public BookJsonDataAccess()
         {
             m_books = new List<BookDTO>();
-            InputDataFileFile();
         }
 
-        public void LoadJson()
-        {
-            using (StreamReader r = new StreamReader(FILE_NAME))
-            {
-                string json = r.ReadToEnd();
-                m_books = JsonConvert.DeserializeObject<List<BookDTO>>(json);
-            }
-        }
-
-        private void InputDataFileFile()
+        public void InputDataFileFile()
         {
             using (StreamReader r = new StreamReader(FILE_NAME))
             {
@@ -69,6 +59,16 @@ namespace Common.DataAccess
             }
 
             return book;
+        }
+
+        public BookDTO GetOne(int id)
+        {
+            return m_books.FirstOrDefault(x => x.Id == id);
+        }
+
+        public List<BookDTO> GetAll()
+        {
+            return m_books;
         }
 
         public void WriteFile()

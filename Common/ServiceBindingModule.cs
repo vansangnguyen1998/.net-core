@@ -17,10 +17,10 @@ namespace Common
 
         private void LoadService()
         {
-            Bind<BookJsonBusiness>().To<BookJsonBusiness>().InSingletonScope();
-            Bind<BookTxtBusiness>().To<BookTxtBusiness>().InSingletonScope();
-            Bind<BookJsonDataAccess>().To<BookJsonDataAccess>().InSingletonScope();
-            Bind<BookTxtDataAccess>().To<BookTxtDataAccess>().InSingletonScope();
+            Bind<IBookBusiness>().To<BookBusiness>().InSingletonScope().Named("TXT");
+            Bind<IBookBusiness>().To<BookBusiness>().InSingletonScope().Named("JSON");
+            _ = Bind<IBookDataAccess>().To<BookTxtDataAccess>().WhenAnyAnchestorNamed("TXT").InSingletonScope();
+            _ = Bind<IBookDataAccess>().To<BookJsonDataAccess>().WhenAnyAnchestorNamed("JSON").InSingletonScope();
         }
     }
 }

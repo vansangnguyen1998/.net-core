@@ -3,15 +3,16 @@ using System.Collections.Generic;
 using System.Text;
 using Common.DTO;
 
-namespace Common.DataAccess
+namespace Common.Business
 {
-    public interface IBookDataAccess
+    public interface IBookBusiness
     {
-        void InputDataFileFile();
 
         BookDTO GetOne(int id);
 
-        List<BookDTO> GetAll(); 
+        List<BookDTO> GetAll();
+
+        void InputDataFileFile();
 
         void InsertBook(BookDTO book);
 
