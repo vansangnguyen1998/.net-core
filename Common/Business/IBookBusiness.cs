@@ -14,7 +14,7 @@ namespace Common.Business
 
         void InputDataFileFile();
 
-        void InsertBook(BookDTO book);
+        bool InsertBook(BookDTO book);
 
         bool RemoveBook(BookDTO bookDto);
 

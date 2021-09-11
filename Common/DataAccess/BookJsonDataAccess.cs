@@ -26,16 +26,11 @@ namespace Common.DataAccess
                 m_books = JsonConvert.DeserializeObject<List<BookDTO>>(json);
             }
         }
-
-        private BookDTO ParseData(string data)
-        {
-            var dataConvert = data.Split(new string[] { "," }, StringSplitOptions.None);
-            return new BookDTO(dataConvert);
-        }
-
+        
         public void InsertBook(BookDTO book)
         {
             m_books.Add(book);
+            WriteFile();
         }
 
         public bool RemoveBook(BookDTO bookDto)
@@ -44,6 +39,7 @@ namespace Common.DataAccess
             if (book!=null)
             {
                 m_books.Remove(book);
+                WriteFile();
                 return true;
             }
 
@@ -55,9 +51,11 @@ namespace Common.DataAccess
             var book = m_books.FirstOrDefault(b => b.Id == bookDto.Id);
             if (book != null)
             {
-                book = bookDto;
-            }
+                m_books.Remove(book);
+                m_books.Add(bookDto);
 
+                WriteFile();
+            }
             return book;
         }
 

@@ -7,9 +7,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "core-api", "core-api\core-a
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "linq", "linq\linq.csproj", "{4B2C74AA-0D37-439A-9BBD-F1764F302518}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{201F92AB-3043-4DE8-BA77-7FBDC5BF72DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "Common\Common.csproj", "{201F92AB-3043-4DE8-BA77-7FBDC5BF72DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppConsole", "AppConsole\AppConsole.csproj", "{4BA39692-755F-43E1-B3C0-F613A200443C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppConsole", "AppConsole\AppConsole.csproj", "{4BA39692-755F-43E1-B3C0-F613A200443C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BookStore", "BookStore", "{6B958B3D-107F-4D66-9ABC-98C3AA0003D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStoreApp", "BookStoreApp\BookStoreApp.csproj", "{F5E4F79F-CDE8-449A-9F51-19E07C505667}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{3ED55E9E-7B4F-404F-A16D-6FDAB9CBE2DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +39,23 @@ Global
 		{4BA39692-755F-43E1-B3C0-F613A200443C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BA39692-755F-43E1-B3C0-F613A200443C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BA39692-755F-43E1-B3C0-F613A200443C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5E4F79F-CDE8-449A-9F51-19E07C505667}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5E4F79F-CDE8-449A-9F51-19E07C505667}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5E4F79F-CDE8-449A-9F51-19E07C505667}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5E4F79F-CDE8-449A-9F51-19E07C505667}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3ED55E9E-7B4F-404F-A16D-6FDAB9CBE2DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ED55E9E-7B4F-404F-A16D-6FDAB9CBE2DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ED55E9E-7B4F-404F-A16D-6FDAB9CBE2DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ED55E9E-7B4F-404F-A16D-6FDAB9CBE2DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{201F92AB-3043-4DE8-BA77-7FBDC5BF72DB} = {6B958B3D-107F-4D66-9ABC-98C3AA0003D9}
+		{4BA39692-755F-43E1-B3C0-F613A200443C} = {6B958B3D-107F-4D66-9ABC-98C3AA0003D9}
+		{F5E4F79F-CDE8-449A-9F51-19E07C505667} = {6B958B3D-107F-4D66-9ABC-98C3AA0003D9}
+		{3ED55E9E-7B4F-404F-A16D-6FDAB9CBE2DA} = {6B958B3D-107F-4D66-9ABC-98C3AA0003D9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FADC9A4C-548C-41C0-9832-3E76FD211D1F}

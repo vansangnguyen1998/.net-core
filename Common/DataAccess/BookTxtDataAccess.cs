@@ -53,6 +53,7 @@ namespace Common.DataAccess
         public void InsertBook(BookDTO book)
         {
             m_books.Add(book);
+            WriteFile();
         }
 
         public bool RemoveBook(BookDTO bookDto)
@@ -64,6 +65,7 @@ namespace Common.DataAccess
                 return true;
             }
 
+            WriteFile();
             return false;
         }
 
@@ -74,6 +76,7 @@ namespace Common.DataAccess
             {
                 m_books.Remove(book);
                 m_books.Add(bookDto);
+                WriteFile();
             }
 
             return book;

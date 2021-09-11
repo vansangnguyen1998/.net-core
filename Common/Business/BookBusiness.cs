@@ -31,9 +31,10 @@ namespace Common.Business
             return _bookDataAccess.GetAll();
         }
 
-        public void InsertBook(BookDTO book)
+        public bool InsertBook(BookDTO book)
         {
             _bookDataAccess.InsertBook(book);
+            return true;
         }
 
         public bool RemoveBook(BookDTO bookDto)
