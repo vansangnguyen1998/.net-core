@@ -19,28 +19,18 @@ namespace BookStoreApp
         public Form1()
         {
             InitializeComponent();
-            comboBoxMode.DataSource = Constants.MODE;
-            listViewData.Columns.Add("Id");
-            listViewData.Columns.Add("Name");
-            listViewData.Columns.Add("Price");
-            listViewData.Columns.Add("Stock");
-            IoC.Get<IBookBusiness>(Constants.MODE[1]).InputDataFileFile();
-            var listData = IoC.Get<IBookBusiness>(Constants.MODE[1]).GetAll();
-
-            foreach (var item in listData)
-            {
-                ListViewItem item3 = new ListViewItem();
-                item3.Text = item.Id.ToString();
-                item3.SubItems.Add(new ListViewItem.ListViewSubItem() { Text = item.Name });
-                item3.SubItems.Add(new ListViewItem.ListViewSubItem() { Text = item.Price.ToString() });
-                item3.SubItems.Add(new ListViewItem.ListViewSubItem() { Text = item.Stock.ToString() });
-                listViewData.Items.Add(item3);
-            }
+            loadData();
         }
 
+        private void loadData()
+        {
+            IoC.Get<IBookBusiness>(Constants.MODE[0]).InputDataFileFile();
+            var listData = IoC.Get<IBookBusiness>(Constants.MODE[0]).GetAll();
+            dataGridView1.DataSource = listData;
+        }
         private void insert_Click(object sender, EventArgs e)
         {
-            var business = IoC.Get<IBookBusiness>(Constants.MODE[1]);
+            var business = IoC.Get<IBookBusiness>(Constants.MODE[0]);
             business.InsertBook(new BookDTO(){Id = int.Parse(id.Text), Name = name.Text, Price = int.Parse(price.Text), Stock = int.Parse(stock.Text) });
             ResetValue();
         }
@@ -55,12 +45,17 @@ namespace BookStoreApp
 
         private void update_Click(object sender, EventArgs e)
         {
-
+            var business = IoC.Get<IBookBusiness>(Constants.MODE[0]);
+            business.UpdateBook(new BookDTO() { Id = int.Parse(id.Text), Name = name.Text, Price = int.Parse(price.Text), Stock = int.Parse(stock.Text) });
+            ResetValue();
         }
 
         private void delete_Click(object sender, EventArgs e)
         {
+            var business = IoC.Get<IBookBusiness>(Constants.MODE[0]);
+            business.RemoveBook(new BookDTO() { Id = int.Parse(id.Text), Name = name.Text, Price = int.Parse(price.Text), Stock = int.Parse(stock.Text) });
 
+            ResetValue();
         }
     }
 }

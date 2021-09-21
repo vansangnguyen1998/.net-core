@@ -11,9 +11,9 @@ namespace linq
         static void Main(string[] args)
         {
             #region sqrNo
-                var arr1 = new List<int>() { 3, 9, 2, 8, 6, 5 };
-                var result = arr1.Where(a => a * a > 20).Select(x => new OutputLinq(x, x * x)).ToList();
-                Console.WriteLine(result.ToString());
+            var arr1 = new List<int>() { 3, 9, 2, 8, 6, 5 };
+            var result = arr1.Where(a => a * a > 20).Select(x => new OutputLinq(x, x * x)).ToList();
+            Console.WriteLine(result.ToString());
             #endregion
 
             #region Write a program to generate a Cartesian Product of three sets.
@@ -26,9 +26,9 @@ namespace linq
             Console.Write("\n----------------------------------------------------\n");
 
             var cartesianProduct = from letter in charset1
-                from number in numset1
-                from colour in colorset1
-                select new { letter, number, colour };
+                                   from number in numset1
+                                   from colour in colorset1
+                                   select new { letter, number, colour };
 
             Console.Write("The Cartesian Product are : \n");
             foreach (var ProductList in cartesianProduct)
@@ -44,8 +44,8 @@ namespace linq
             Console.Write("\nLINQ : Display the number and frequency of number from given array : \n");
 
             var n = from x in arr1
-                group x by x into y
-                select y;
+                    group x by x into y
+                    select y;
             Console.WriteLine("\nThe number and the Frequency are : \n");
             foreach (var arrNo in n)
             {
@@ -54,6 +54,7 @@ namespace linq
             Console.WriteLine("\n");
 
             #endregion
+
         }
     }
 

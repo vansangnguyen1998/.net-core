@@ -16,3 +16,10 @@ D:\Docs\Training\foudation\core-api\AppConsole\obj\Debug\netcoreapp3.1\AppConsol
 D:\Docs\Training\foudation\core-api\AppConsole\obj\Debug\netcoreapp3.1\AppConsole.pdb
 D:\Docs\Training\foudation\core-api\AppConsole\obj\Debug\netcoreapp3.1\AppConsole.genruntimeconfig.cache
 D:\Docs\Training\foudation\core-api\AppConsole\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Docs\Training\foudation\core-api\AppConsole\bin\Debug\netcoreapp3.1\log4net.dll
+D:\Docs\Training\foudation\core-api\AppConsole\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+D:\Docs\Training\foudation\core-api\AppConsole\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+D:\Docs\Training\foudation\core-api\AppConsole\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
+D:\Docs\Training\foudation\core-api\AppConsole\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Docs\Training\foudation\core-api\AppConsole\bin\Debug\netcoreapp3.1\Common.dll.config
+D:\Docs\Training\foudation\core-api\AppConsole\bin\Debug\netcoreapp3.1\AppConsole.dll.config

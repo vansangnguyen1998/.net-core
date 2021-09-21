@@ -30,7 +30,6 @@ namespace BookStoreApp
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBoxMode = new System.Windows.Forms.ComboBox();
             this.delete = new System.Windows.Forms.Button();
             this.update = new System.Windows.Forms.Button();
             this.insert = new System.Windows.Forms.Button();
@@ -39,14 +38,14 @@ namespace BookStoreApp
             this.name = new System.Windows.Forms.TextBox();
             this.id = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.listViewData = new System.Windows.Forms.ListView();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboBoxMode);
             this.groupBox1.Controls.Add(this.delete);
             this.groupBox1.Controls.Add(this.update);
             this.groupBox1.Controls.Add(this.insert);
@@ -60,14 +59,6 @@ namespace BookStoreApp
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Information";
-            // 
-            // comboBoxMode
-            // 
-            this.comboBoxMode.FormattingEnabled = true;
-            this.comboBoxMode.Location = new System.Drawing.Point(590, 22);
-            this.comboBoxMode.Name = "comboBoxMode";
-            this.comboBoxMode.Size = new System.Drawing.Size(121, 23);
-            this.comboBoxMode.TabIndex = 5;
             // 
             // delete
             // 
@@ -129,7 +120,7 @@ namespace BookStoreApp
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.listViewData);
+            this.groupBox2.Controls.Add(this.dataGridView1);
             this.groupBox2.Location = new System.Drawing.Point(11, 119);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(777, 319);
@@ -137,14 +128,14 @@ namespace BookStoreApp
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Data";
             // 
-            // listViewData
+            // dataGridView1
             // 
-            this.listViewData.HideSelection = false;
-            this.listViewData.Location = new System.Drawing.Point(6, 24);
-            this.listViewData.Name = "listViewData";
-            this.listViewData.Size = new System.Drawing.Size(760, 283);
-            this.listViewData.TabIndex = 0;
-            this.listViewData.UseCompatibleStateImageBehavior = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(6, 22);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(765, 291);
+            this.dataGridView1.TabIndex = 0;
             // 
             // Form1
             // 
@@ -158,6 +149,7 @@ namespace BookStoreApp
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -173,9 +165,8 @@ namespace BookStoreApp
         private System.Windows.Forms.TextBox name;
         private System.Windows.Forms.TextBox id;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ListView listViewData;
-        private System.Windows.Forms.ComboBox comboBoxMode;
         private System.Windows.Forms.TextBox stock;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 

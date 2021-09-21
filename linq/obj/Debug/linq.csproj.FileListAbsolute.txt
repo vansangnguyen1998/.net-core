@@ -5,3 +5,7 @@ D:\Docs\Training\foudation\core-api\linq\obj\Debug\linq.csprojAssemblyReference.
 D:\Docs\Training\foudation\core-api\linq\obj\Debug\linq.csproj.CoreCompileInputs.cache
 D:\Docs\Training\foudation\core-api\linq\obj\Debug\linq.exe
 D:\Docs\Training\foudation\core-api\linq\obj\Debug\linq.pdb
+D:\Docs\Training\foudation\core-api\linq\bin\Debug\log4net.dll
+D:\Docs\Training\foudation\core-api\linq\bin\Debug\log4net.xml
+D:\Docs\Training\foudation\core-api\linq\obj\Debug\linq.csproj.CopyComplete
+D:\Docs\Training\foudation\core-api\linq\bin\Debug\log4net.config

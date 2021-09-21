@@ -1,9 +1,9 @@
 D:\Docs\Training\foudation\core-api\Common\bin\Debug\netcoreapp3.1\Common.deps.json
 D:\Docs\Training\foudation\core-api\Common\bin\Debug\netcoreapp3.1\Common.dll
 D:\Docs\Training\foudation\core-api\Common\bin\Debug\netcoreapp3.1\Common.pdb
-D:\Docs\Training\foudation\core-api\Common\obj\Debug\netcoreapp3.1\Common.csprojAssemblyReference.cache
 D:\Docs\Training\foudation\core-api\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfoInputs.cache
 D:\Docs\Training\foudation\core-api\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfo.cs
 D:\Docs\Training\foudation\core-api\Common\obj\Debug\netcoreapp3.1\Common.csproj.CoreCompileInputs.cache
 D:\Docs\Training\foudation\core-api\Common\obj\Debug\netcoreapp3.1\Common.dll
 D:\Docs\Training\foudation\core-api\Common\obj\Debug\netcoreapp3.1\Common.pdb
+D:\Docs\Training\foudation\core-api\Common\bin\Debug\netcoreapp3.1\Common.dll.config

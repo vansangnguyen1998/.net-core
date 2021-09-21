@@ -18,3 +18,6 @@ D:\Docs\Training\foudation\core-api\BookStoreApp\obj\Debug\netcoreapp3.1\BookSto
 D:\Docs\Training\foudation\core-api\BookStoreApp\obj\Debug\netcoreapp3.1\BookStoreApp.dll
 D:\Docs\Training\foudation\core-api\BookStoreApp\obj\Debug\netcoreapp3.1\BookStoreApp.pdb
 D:\Docs\Training\foudation\core-api\BookStoreApp\obj\Debug\netcoreapp3.1\BookStoreApp.genruntimeconfig.cache
+D:\Docs\Training\foudation\core-api\BookStoreApp\bin\Debug\netcoreapp3.1\log4net.dll
+D:\Docs\Training\foudation\core-api\BookStoreApp\bin\Debug\netcoreapp3.1\Common.dll.config
+D:\Docs\Training\foudation\core-api\BookStoreApp\bin\Debug\netcoreapp3.1\BookStoreApp.dll.config
