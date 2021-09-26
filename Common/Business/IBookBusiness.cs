@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using System.Text;
 using Common.DTO;
+using Common.Entity;
 
 namespace Common.Business
 {
     public interface IBookBusiness
     {
 
-        BookDTO GetOne(int id);
+        BookEntity GetOne(int id);
 
-        List<BookDTO> GetAll();
+        List<BookEntity> GetAll();
 
         void InputDataFileFile();
 
@@ -18,7 +19,7 @@ namespace Common.Business
 
         bool RemoveBook(BookDTO bookDto);
 
-        BookDTO UpdateBook(BookDTO bookDto);
+        BookEntity UpdateBook(BookDTO bookDto);
 
         void WriteFile();
     }

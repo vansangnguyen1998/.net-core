@@ -23,3 +23,4 @@ D:\Docs\Training\foudation\core-api\AppConsole\bin\Debug\netcoreapp3.1\System.Se
 D:\Docs\Training\foudation\core-api\AppConsole\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 D:\Docs\Training\foudation\core-api\AppConsole\bin\Debug\netcoreapp3.1\Common.dll.config
 D:\Docs\Training\foudation\core-api\AppConsole\bin\Debug\netcoreapp3.1\AppConsole.dll.config
+D:\Docs\Training\foudation\core-api\AppConsole\bin\Debug\netcoreapp3.1\AutoMapper.dll

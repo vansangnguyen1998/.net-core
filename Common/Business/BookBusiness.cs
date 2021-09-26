@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using AutoMapper;
 using Common.DataAccess;
 using Common.DTO;
+using Common.Entity;
 using Ninject;
 
 namespace Common.Business
@@ -11,24 +13,27 @@ namespace Common.Business
     public class BookBusiness : IBookBusiness
     {
         private IBookDataAccess _bookDataAccess;
-
+        public IMapper _bookMapper;
         public void InputDataFileFile()
         {
             _bookDataAccess.InputDataFileFile();
         }
-        public BookBusiness(IBookDataAccess bookDataAccess)
+        public BookBusiness(IBookDataAccess bookDataAccess, IMapper mapper)
         {
             _bookDataAccess = bookDataAccess;
+            _bookMapper = mapper;
         }
 
-        public BookDTO GetOne(int id)
+        public BookEntity GetOne(int id)
         {
-            return _bookDataAccess.GetOne(id);
+            return _bookMapper.Map<BookDTO, BookEntity>(_bookDataAccess.GetOne(id));
         }
 
-        public List<BookDTO> GetAll()
+        public List<BookEntity> GetAll()
         {
-            return _bookDataAccess.GetAll();
+            var listBook = _bookDataAccess.GetAll();
+            var books = _bookMapper.Map<List<BookDTO>, List<BookEntity>>(listBook);
+            return books;
         }
 
         public bool InsertBook(BookDTO book)
@@ -42,9 +47,9 @@ namespace Common.Business
             return _bookDataAccess.RemoveBook(bookDto);
         }
 
-        public BookDTO UpdateBook(BookDTO bookDto)
+        public BookEntity UpdateBook(BookDTO bookDto)
         {
-            return _bookDataAccess.UpdateBook(bookDto);
+            return _bookMapper.Map<BookDTO, BookEntity>(_bookDataAccess.UpdateBook(bookDto));
         }
 
         public void WriteFile()

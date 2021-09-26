@@ -50,10 +50,11 @@ namespace Common.DataAccess
             return new BookDTO(dataConvert);
         }
 
-        public void InsertBook(BookDTO book)
+        public bool InsertBook(BookDTO book)
         {
             m_books.Add(book);
             WriteFile();
+            return true;
         }
 
         public bool RemoveBook(BookDTO bookDto)

@@ -13,7 +13,7 @@ namespace Common.DataAccess
 
         List<BookDTO> GetAll(); 
 
-        void InsertBook(BookDTO book);
+        bool InsertBook(BookDTO book);
 
         bool RemoveBook(BookDTO bookDto);
 

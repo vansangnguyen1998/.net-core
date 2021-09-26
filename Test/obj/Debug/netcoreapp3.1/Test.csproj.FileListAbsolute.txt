@@ -106,3 +106,10 @@ D:\Docs\Training\foudation\core-api\Test\bin\Debug\netcoreapp3.1\Mono.Cecil.Rock
 D:\Docs\Training\foudation\core-api\Test\bin\Debug\netcoreapp3.1\nunit.core.dll
 D:\Docs\Training\foudation\core-api\Test\bin\Debug\netcoreapp3.1\nunit.core.interfaces.dll
 D:\Docs\Training\foudation\core-api\Test\bin\Debug\netcoreapp3.1\nunit.util.dll
+D:\Docs\Training\foudation\core-api\Test\bin\Debug\netcoreapp3.1\AutoMapper.dll
+D:\Docs\Training\foudation\core-api\Test\bin\Debug\netcoreapp3.1\log4net.dll
+D:\Docs\Training\foudation\core-api\Test\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+D:\Docs\Training\foudation\core-api\Test\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+D:\Docs\Training\foudation\core-api\Test\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
+D:\Docs\Training\foudation\core-api\Test\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Docs\Training\foudation\core-api\Test\bin\Debug\netcoreapp3.1\Common.dll.config
